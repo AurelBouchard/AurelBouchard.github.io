@@ -15,12 +15,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Raleway-Extrabold";
-  src: url("fonts/Raleway-ExtraBold.ttf");
-  font-weight: bolder;
-  font-style: normal;
-}
 
 /* MISE EN FORME GENERALE */
 
@@ -501,10 +495,6 @@ footer li {
 
 .lightblue_hover:hover {
   background-color: #deebff;
-}
-
-.bolder {
-  font-family: "Raleway-ExtraBold";
 }
 
 .show_red {
