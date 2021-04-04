@@ -34,18 +34,22 @@ ainsi que le gris pour le fond #F2F2F2. */
 body {
   font-family: "Raleway-Regular";
   color: green;
+  margin: 0;
 }
 
 #landing {
-  max-width: 1340px;
-  margin: auto;
+  /* max-width: 720px; */
+  margin: 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   HEADER   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  border: 1px solid red;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* margin: 0; */
+  height: 130px;
 }
 
 h2 {
@@ -63,34 +67,57 @@ a {
   text-decoration: none;
 }
 
+
 #signin {
   color: #0065fc;
   font-family: "Raleway-Bold";
 }
 
-#links {
-  flex: 1;
 
+nav{
+  border: 1px solid violet;
+  /* margin-top: -10px; */
+  /* flex: 1; */
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-
+  justify-content: space-between;
+  /* text-align: center; */
+  /* flex-wrap: wrap-reverse; */
 }
-
-nav {
-  margin-top: -10px;
+nav div{
+  width: 365px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   text-align: center;
-  flex-wrap: wrap-reverse;
+
 }
 
-#links a {
-  flex: 1;
+.links {
+
+  /* flex: 1; */
   padding-top: 47px;
   width: 180px;
+  text-align: center;
 }
-#links a:hover {
+
+.logo, .signin{
+  /* align-self: flex-start; */
+}
+
+
+.ancre{
+  border: 1px solid green;
+  justify-self:center ;
+  align-self:flex-end;
+
+}
+.ancre:active {
+  color: #ffff00;
+}
+
+.signin{
+  /* text-align: center; */
+}
+.signin:hover {
   border-top: 5px solid #0065fc;
   padding-top: 42px;
   color: #0065fc;
@@ -99,6 +126,7 @@ nav {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE HAUTE : DIV SEARCH SECTION   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #search_section {
   /* border: 1px solid rgb(225, 0, 255); */
+  margin-left: 15px;
 }
 
 #search_section h2 {

@@ -67,16 +67,17 @@ a {
   font-family: "Raleway-Bold";
 }
 
-#links {
+/* #links {
   flex: 1;
 
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 
-}
+} */
 
 nav {
+  flex: 1;
   margin-top: -10px;
   display: flex;
   justify-content: flex-end;
@@ -84,12 +85,12 @@ nav {
   flex-wrap: wrap-reverse;
 }
 
-#links a {
+.links {
   flex: 1;
   padding-top: 47px;
   width: 180px;
 }
-#links a:hover {
+.links:hover {
   border-top: 5px solid #0065fc;
   padding-top: 42px;
   color: #0065fc;
