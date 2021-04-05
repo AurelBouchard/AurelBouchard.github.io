@@ -289,20 +289,11 @@ input {
   margin-right: 15px;
 }
 
-.landscape {
+.in_town img {
   border-radius: 15px 15px 0 0;
-  height: 185px;
-  width: 245px;
+  height: 140px;
+  width: 100%;
   object-fit:cover ;
-  /* object-position:top ; */
-}
-.portrait {
-  border-radius: 15px 15px 15px 15px;
-  height: 185px;
-  width: 245px;
-  /* top: -50px; */
-  object-fit:fill ;
-  /* object-position: bottom; */
 }
 
 .bottom_stripe {
