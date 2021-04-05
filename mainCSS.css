@@ -163,27 +163,26 @@ input {
   padding-left: 15px;
   padding-top: 14px;
   padding-bottom: 14px;
-  /* position: relative;
-  top: -19px; */
   width: 235px;
 }
 #btn {
   display: inline;
   color: white;
   background-color: #0065fc;
-  margin-left: -5px;
+  margin-left: -27px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 0 15px 15px 0;
-  /* position: relative;
-  top: -19px; */
 }
 #btn:active{
   color: #0065fc;
   background-color: #deebff;
 
+}
+#magnif{
+  visibility: hidden;
 }
 
 .label_filters {
