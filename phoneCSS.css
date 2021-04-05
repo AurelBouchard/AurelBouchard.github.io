@@ -268,7 +268,6 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  /* justify-content: space-between; */
   justify-content:center;
 
   margin-top: 40px;
@@ -276,7 +275,6 @@ input {
 }
 
 #left_block {
-  /* border: 1px solid red; */
   flex: 2.5;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -291,14 +289,11 @@ input {
 }
 
 #in_town {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
   justify-content: center;
-  /* align-items: flex-start; */
-
 }
 
 .in_town {
@@ -369,8 +364,6 @@ input {
 #right_block {
   flex: 1;
   padding-top: 10px;
-  /* padding-left: 30px;
-  padding-right: 30px; */
 }
 
 #right_block h2{

@@ -1,4 +1,4 @@
-/* RESERVIA TABLET CSS */
+/* RESERVIA MAIN CSS */
 
 /* CHARGEMENT DES POLICES */
 @font-face {
@@ -33,6 +33,7 @@ ainsi que le gris pour le fond #F2F2F2. */
 
 body {
   font-family: "Raleway-Regular";
+  margin-top: 0px;
   color: red;
 }
 
@@ -63,38 +64,56 @@ a {
   text-decoration: none;
 }
 
-#signin {
+
+
+nav {
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.logo{
+  margin-top: 43px;
+text-align: start;
+justify-self: flex-start;
+flex: 1;
+}
+.ancre_block{
+  display: flex;
+  flex-direction: row;
+  width: 290px;
+  margin-top: -22px;
+}
+.ancre{
+  flex: 1;
+  padding-top: 50px;
+  align-self:center;
+}
+
+.links {
+  padding-top: 50px;
+  height: 20px;
+  width: 145px;
+}
+.links:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 48px;
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.signin {
   color: #0065fc;
   font-family: "Raleway-Bold";
 }
 
-#links {
-  flex: 1;
 
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
 
-}
 
-nav {
-  margin-top: -10px;
-  display: flex;
-  justify-content: flex-end;
-  text-align: center;
-  flex-wrap: wrap-reverse;
-}
 
-#links a {
-  flex: 1;
-  padding-top: 47px;
-  width: 180px;
-}
-#links a:hover {
-  border-top: 5px solid #0065fc;
-  padding-top: 42px;
-  color: #0065fc;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE HAUTE : DIV SEARCH SECTION   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #search_section {
@@ -140,27 +159,26 @@ input {
   padding-left: 15px;
   padding-top: 14px;
   padding-bottom: 14px;
-  /* position: relative;
-  top: -19px; */
   width: 235px;
 }
 #btn {
   display: inline;
   color: white;
   background-color: #0065fc;
-  margin-left: -5px;
+  margin-left: -27px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 0 15px 15px 0;
-  /* position: relative;
-  top: -19px; */
 }
 #btn:active{
   color: #0065fc;
   background-color: #deebff;
 
+}
+#magnif{
+  visibility: hidden;
 }
 
 .label_filters {
@@ -174,7 +192,6 @@ input {
 }
 
 .selector {
-  /* border: 1px solid red; */
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
@@ -234,64 +251,53 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  justify-content: space-between;
+  justify-content: center;
 
   margin-top: 40px;
   margin-bottom: 50px;
 }
 
 #left_block {
-  /* border: 1px solid red; */
-  flex: 2.5;
+  flex: 1;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-right: 40px;
+  margin-right: 50px;
   max-width: 990px;
 }
 #left_block h2{
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 20px;
-}
-
-.show_more{
-  padding: 10px;
-  border-radius: 23px;
-  margin-left: 30px;
-}
-.show_more:active{
-  color: #0065fc;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #in_town {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
   justify-content: center;
-  align-items: flex-start;
-
 }
 
 .in_town {
   display: block;
   border: 5px solid white;
   border-radius: 20px;
-  height: 200px;
-  width: 245px;
+  height: 185px;
+  width: 323px;
 
   position: relative;
-  box-shadow: 0px 8px 20px lightgray;
+  box-shadow: 0px 5px 15px rgb(229, 229, 229);
   
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
 .in_town img {
   border-radius: 15px 15px 0 0;
-  height: 180px;
-  width: 245px;
+  height: 165px;
+  width: 323px;
   object-fit: fill;
 }
 
@@ -323,8 +329,19 @@ input {
 }
 
 .show_more {
+  display: block;
   font-size: 18px;
   font-family: "Raleway-Bold";
+
+  padding: 10px;
+  border-radius: 23px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+
+}
+.show_more:active{
+  color: #0065fc;
 }
 
 #right_block {
@@ -333,6 +350,17 @@ input {
   padding-left: 30px;
   padding-right: 30px;
 }
+@media screen and (max-width: 822px) {
+  #left_block{
+    background: none;
+    margin: auto;
+    min-width: 416px;
+  }
+  #right_block {
+    /* limitation à 2 colonnes pour les tailles intermédiaires */
+    border-radius: 0;
+  }
+  }
 
 #right_block h2{
   margin-left: 10px;
@@ -355,7 +383,7 @@ input {
   border: 5px solid white;
   border-radius: 20px;
   height: 144px;
-  width: 343px;
+  width: 323px;
 
   position: relative;
   box-shadow: 0px 8px 20px lightgrey;
@@ -377,9 +405,9 @@ input {
   display: inline;
   background-color: white;
   height: 100%;
-  width: 206px;
+  width: 180px;
   border-radius: 0 15px 15px 0;
-  margin-left: -63px;
+  margin-left: -57px;
 }
 
 .right_stripe > p {
@@ -407,6 +435,9 @@ input {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE BASSE : DIV ACTIVITIES   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+#activities h2{
+  margin-left: 20px;
+}
 #act_view_all {
   display: flex;
   flex-direction: row;
@@ -414,6 +445,21 @@ input {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1304px) {
+#act_view_all {
+  /* limitation à 2 colonnes pour les tailles intermédiaires */
+  width: 700px;
+  margin: auto;
+}
+}
+@media screen and (max-width: 720px) {
+#act_view_all {
+  /* limitation à 2 colonnes pour les tailles intermédiaires */
+  width: 350px;
+  margin: auto;
+}
+}
+
 .activities_panel {
   display: block;
   width: 317px;
