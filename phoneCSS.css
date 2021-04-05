@@ -35,8 +35,6 @@ body {
   font-family: "Raleway-Regular";
   color: green;
   margin: 0;
-  max-width: 550px;
-  min-width: 375px;
 }
 
 #landing {
@@ -72,7 +70,7 @@ nav {
   font-size: 16px;
   display: flex;
   flex-direction: row;
-  /* justify-content:flex-end ; */
+  justify-content:space-between ;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -81,7 +79,7 @@ nav {
   margin-left: 25px;
 text-align: start;
 justify-self: flex-start;
-flex: 1;
+/* flex: 1; */
 }
 .ancre_block{
   /* border: 1px solid green; */
@@ -116,12 +114,14 @@ border-bottom: 3px solid #0065fc;
 .signin {
   color: #0065fc;
   font-family: "Raleway-Bold";
+  justify-self:right ;
   /* a prévoir pour phone css : */
-  /* width: 160px; */
+  width: 100px;
+  margin-right: 50px;
+  padding-top: 48px;
 }
 .signin:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 48px;
   color: #0065fc;
   font-weight: bold;
   font-size: 15px;
@@ -132,6 +132,7 @@ border-bottom: 3px solid #0065fc;
   /* border: 1px solid rgb(225, 0, 255); */
   margin-left: 20px;
   margin-right: 20px;
+  min-width: 375px;
 }
 
 #search_section h2 {
@@ -267,10 +268,11 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content:center;
 
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 #left_block {
@@ -278,21 +280,14 @@ input {
   flex: 2.5;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-right: 40px;
+  margin-right: 0px;
   max-width: 990px;
 }
 #left_block h2{
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 20px;
-}
-
-.show_more{
-  padding: 10px;
-  border-radius: 23px;
-  margin-left: 30px;
-}
-.show_more:active{
-  color: #0065fc;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #in_town {
@@ -302,7 +297,7 @@ input {
   flex-wrap: wrap;
 
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 
 }
 
@@ -310,21 +305,21 @@ input {
   display: block;
   border: 5px solid white;
   border-radius: 20px;
-  height: 200px;
-  width: 245px;
+  height: 185px;
+  width: 323px;
 
   position: relative;
-  box-shadow: 0px 8px 20px lightgray;
+  box-shadow: 0px 5px 15px rgb(229, 229, 229);
   
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
 .in_town img {
   border-radius: 15px 15px 0 0;
-  height: 180px;
-  width: 245px;
+  height: 165px;
+  width: 323px;
   object-fit: fill;
 }
 
@@ -356,19 +351,33 @@ input {
 }
 
 .show_more {
+  display: block;
   font-size: 18px;
   font-family: "Raleway-Bold";
+
+  padding: 10px;
+  border-radius: 23px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+
+}
+.show_more:active{
+  color: #0065fc;
 }
 
 #right_block {
   flex: 1;
   padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
 }
 
 #right_block h2{
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .fa-chart-line {
@@ -382,25 +391,28 @@ input {
   flex-wrap: wrap;
 
   justify-content: space-around;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .most_pop {
   border: 5px solid white;
   border-radius: 20px;
-  height: 144px;
-  width: 343px;
+  height: 130px;
+  width: 323px;
 
   position: relative;
   box-shadow: 0px 8px 20px lightgrey;
 
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 .most_pop img {
   display: inline;
   border-radius: 15px 0 0 15px;
-  height: 144px;
+  height: 130px;
   width: 200px;
   object-fit: cover;
 }
@@ -410,9 +422,9 @@ input {
   display: inline;
   background-color: white;
   height: 100%;
-  width: 206px;
+  width: 180px;
   border-radius: 0 15px 15px 0;
-  margin-left: -63px;
+  margin-left: -57px;
 }
 
 .right_stripe > p {
@@ -425,7 +437,7 @@ input {
   font-size: 16px;
   width: 175px;
   height: auto;
-  max-height: 4.8em;
+  max-height: 3.5em;
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -440,46 +452,44 @@ input {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE BASSE : DIV ACTIVITIES   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+#activities{
+  max-width: 550px;
+}
+#activities h2{
+  margin-left: 20px;
+}
+
 #act_view_all {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   margin-bottom: 20px;
 }
 .activities_panel {
   display: block;
-  width: 317px;
-  height: 450px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .activity {
   display: block;
   border-radius: 20px;
+  height: 195px;
+  width: 323px;
   box-shadow: 0px 8px 20px lightgray;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .activity img {
   display: block;
-  width: 100%;
+  height: 140px;
+  width: 323px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
-.full_height {
-  height: 390px;
-}
-.half_height {
-  height: 153px;
-}
-.prct70_height {
-  height: 197px;
-}
-.prct30_height {
-  height: 108px;
-}
 
 .activities_panel p {
   display: block;
@@ -489,7 +499,7 @@ input {
   border-radius: 0 0 20px 20px;
   margin-top: 0;
   padding-top: 20px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   FOOTER   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -522,9 +532,8 @@ footer li {
 
 /* MISE EN PAGE PAR CLASSES NON SPECIFIQUES*/
 
-.round_grey {
+.round_grey:last-child {
   background-color: #f2f2f2;
-  border-radius: 25px;
 }
 
 .lightblue_hover:hover {
