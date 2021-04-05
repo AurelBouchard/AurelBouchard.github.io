@@ -35,6 +35,7 @@ body {
   font-family: "Raleway-Regular";
   color: green;
   margin: 0;
+  max-width: 550px;
 }
 
 #landing {
@@ -44,12 +45,9 @@ body {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   HEADER   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 header {
-  border: 1px solid red;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* margin: 0; */
-  height: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -68,22 +66,18 @@ a {
 }
 
 
-.signin {
-  color: #0065fc;
-  font-family: "Raleway-Bold";
-}
-
-
 nav {
   width: 100%;
   font-size: 16px;
   display: flex;
   flex-direction: row;
   /* justify-content:flex-end ; */
+  flex-wrap: wrap;
   text-align: center;
 }
 .logo{
-  margin-top: 43px;
+  margin-top: 33px;
+  margin-left: 25px;
 text-align: start;
 justify-self: flex-start;
 flex: 1;
@@ -91,27 +85,30 @@ flex: 1;
 .ancre_block{
   /* border: 1px solid green; */
   display: flex;
+  flex: 1;
   flex-direction: row;
   width: 290px;
+  order:3;
 }
 .ancre{
   flex: 1;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 15px;
   align-self:center;
+  border-bottom: 3px solid #f2f2f2;
+}
+.ancre:hover{
+border-bottom: 3px solid #0065fc;
+  color: #0065fc;
+  font-weight: bold;
+  /* font-size: 15px; */
 }
 
 .links {
-  padding-top: 50px;
+  padding-top: 40px;
   height: 20px;
   width: 145px;
   /* background-color: aquamarine; */
-}
-.links:hover {
-  border-top: 2px solid #0065fc;
-  padding-top: 48px;
-  color: #0065fc;
-  font-weight: bold;
-  font-size: 15px;
 }
 
 
@@ -120,6 +117,13 @@ flex: 1;
   font-family: "Raleway-Bold";
   /* a prévoir pour phone css : */
   /* width: 160px; */
+}
+.signin:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 48px;
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE HAUTE : DIV SEARCH SECTION   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
