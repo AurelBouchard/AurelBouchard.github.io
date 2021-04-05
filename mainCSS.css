@@ -263,14 +263,6 @@ input {
   margin-bottom: 20px;
 }
 
-.show_more{
-  padding: 10px;
-  border-radius: 23px;
-  margin-left: 30px;
-}
-.show_more:active{
-  color: #0065fc;
-}
 
 #in_town {
   display: flex;
@@ -297,11 +289,20 @@ input {
   margin-right: 15px;
 }
 
-.in_town img {
+.landscape {
   border-radius: 15px 15px 0 0;
-  height: 180px;
+  height: 185px;
   width: 245px;
-  object-fit: fill;
+  object-fit:cover ;
+  /* object-position:top ; */
+}
+.portrait {
+  border-radius: 15px 15px 15px 15px;
+  height: 185px;
+  width: 245px;
+  /* top: -50px; */
+  object-fit:fill ;
+  /* object-position: bottom; */
 }
 
 .bottom_stripe {
@@ -334,6 +335,12 @@ input {
 .show_more {
   font-size: 18px;
   font-family: "Raleway-Bold";
+  padding: 10px;
+  border-radius: 23px;
+  margin-left: 30px;
+}
+.show_more:active{
+  color: #0065fc;
 }
 
 #right_block {
