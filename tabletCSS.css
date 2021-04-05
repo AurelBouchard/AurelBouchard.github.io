@@ -34,12 +34,11 @@ ainsi que le gris pour le fond #F2F2F2. */
 body {
   font-family: "Raleway-Regular";
   margin-top: 0px;
-  color: red;
+  /* color: red; */
 }
 
 #landing {
-  max-width: 1340px;
-  margin: auto;
+  margin: 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   HEADER   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -112,13 +111,7 @@ flex: 1;
 
 
 
-
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE HAUTE : DIV SEARCH SECTION   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#search_section {
-  /* border: 1px solid rgb(225, 0, 255); */
-}
 
 #search_section h2 {
   margin-top: 30px;
@@ -259,16 +252,15 @@ input {
 
 #left_block {
   flex: 1;
-  padding-top: 10px;
   padding-bottom: 30px;
   margin-right: 50px;
   max-width: 990px;
 }
 #left_block h2{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 #in_town {
@@ -346,7 +338,6 @@ input {
 
 #right_block {
   flex: 1;
-  padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -363,7 +354,10 @@ input {
   }
 
 #right_block h2{
-  margin-left: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .fa-chart-line {
@@ -375,7 +369,6 @@ input {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   justify-content: space-around;
 }
 
@@ -537,31 +530,15 @@ footer li {
 
 .round_grey {
   background-color: #f2f2f2;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .lightblue_hover:hover {
   background-color: #deebff;
 }
 
-.show_red {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.show_blue {
-  background-color: rgba(0, 0, 255, 0.3);
-  color: blue;
-}
-.show_green {
-  background-color: rgba(0, 255, 0, 0.5);
-}
 
-.inline {
-  display: inline;
-}
-.block {
-  display: block;
-}
-
+/* pour les étoiles */
 .blue {
   color: #0065fc;
 }

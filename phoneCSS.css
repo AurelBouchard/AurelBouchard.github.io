@@ -33,12 +33,11 @@ ainsi que le gris pour le fond #F2F2F2. */
 
 body {
   font-family: "Raleway-Regular";
-  color: green;
   margin: 0;
+  /* color: green; */
 }
 
 #landing {
-  /* max-width: 720px; */
   margin: 0;
 }
 
@@ -79,10 +78,8 @@ nav {
   margin-left: 25px;
 text-align: start;
 justify-self: flex-start;
-/* flex: 1; */
 }
 .ancre_block{
-  /* border: 1px solid green; */
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -100,14 +97,12 @@ justify-self: flex-start;
 border-bottom: 3px solid #0065fc;
   color: #0065fc;
   font-weight: bold;
-  /* font-size: 15px; */
 }
 
 .links {
   padding-top: 40px;
   height: 20px;
   width: 145px;
-  /* background-color: aquamarine; */
 }
 
 
@@ -115,7 +110,6 @@ border-bottom: 3px solid #0065fc;
   color: #0065fc;
   font-family: "Raleway-Bold";
   justify-self:right ;
-  /* a prévoir pour phone css : */
   width: 100px;
   margin-right: 50px;
   padding-top: 48px;
@@ -129,7 +123,6 @@ border-bottom: 3px solid #0065fc;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE HAUTE : DIV SEARCH SECTION   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #search_section {
-  /* border: 1px solid rgb(225, 0, 255); */
   margin-left: 20px;
   margin-right: 20px;
   min-width: 375px;
@@ -456,13 +449,11 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: center;
   margin-bottom: 20px;
 }
 .activities_panel {
   display: block;
-  /* margin-bottom: 30px; */
 }
 
 .activity {
@@ -533,24 +524,7 @@ footer li {
   background-color: #deebff;
 }
 
-.show_red {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.show_blue {
-  background-color: rgba(0, 0, 255, 0.3);
-  color: blue;
-}
-.show_green {
-  background-color: rgba(0, 255, 0, 0.5);
-}
-
-.inline {
-  display: inline;
-}
-.block {
-  display: block;
-}
-
+/* pour les étoiles */
 .blue {
   color: #0065fc;
 }
