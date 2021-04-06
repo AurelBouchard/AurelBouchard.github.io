@@ -343,7 +343,7 @@ input {
 }
 @media screen and (max-width: 822px) {
   #left_block{
-    background: none;
+    background: green;
     margin: auto;
     min-width: 416px;
   }
@@ -438,11 +438,15 @@ input {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1304px) {
+/* @media screen and (max-width: 1304px) { */
+  @media screen and (max-width: 1304px) {
 #act_view_all {
   /* limitation à 2 colonnes pour les tailles intermédiaires */
   width: 700px;
   margin: auto;
+}
+body{
+  color:violet;
 }
 }
 @media screen and (max-width: 720px) {
