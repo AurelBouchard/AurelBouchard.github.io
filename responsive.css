@@ -95,13 +95,7 @@
     height: 20px;
     width: 145px;
   }
-  .links:hover {
-    border-top: 2px solid #0065fc;
-    padding-top: 48px;
-    color: #0065fc;
-    font-weight: bold;
-    font-size: 15px;
-  }
+
   
   
   .signin {
@@ -504,7 +498,6 @@
   
   .round_grey {
     background-color: #f2f2f2;
-    border-radius: 20px;
   }
   
   .lightblue_hover:hover {
@@ -531,7 +524,6 @@
 
 @media screen and (max-width: 1060px) {
     body {
-        font-family: "Raleway-Regular";
         margin-top: 0px;
         margin: 0;
     }
@@ -583,6 +575,18 @@
         margin-left: 20px;
     }
 
+  .round_grey {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+  }
+
+}
+
+@media screen and (max-width: 796px) {
+.round_grey {
+    background-color: #f2f2f2;
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -590,6 +594,18 @@
       /* limitation à 2 colonnes pour les tailles intermédiaires */
       width: 350px;
       margin: auto;
+    }
+
+
+    /* RETABLISSEMENT DES VALEUR PREVUES EN MAIN SAUF */
+    /* #act_view_all */
+
+    .links:hover {
+        border-top: 2px solid #0065fc;
+        padding-top: 48px;
+        color: #0065fc;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
 
@@ -638,6 +654,9 @@
         padding-top: 40px;
         height: 20px;
         width: 145px;
+    }
+    .links:hover{
+        border-top: none;
     }
       
     .signin {
