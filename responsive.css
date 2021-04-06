@@ -583,20 +583,6 @@
         margin-left: 20px;
     }
 
-
-}
-
-@media screen and (max-width: 822px) {
-    #left_block{
-      background: none;
-      margin: auto;
-      min-width: 416px;
-    }
-    #right_block {
-      /* limitation à 2 colonnes pour les tailles intermédiaires */
-      border-radius: 0;
-    }
-
 }
 
 @media screen and (max-width: 720px) {
@@ -606,7 +592,6 @@
       margin: auto;
     }
 }
-
 
 @media screen and (max-width: 550px){
     nav {
@@ -687,6 +672,7 @@
     }
 
     #magnif{
+        visibility: visible;
         display: inline;
         color: white;
         background-color: #0065fc;
@@ -735,19 +721,6 @@
         margin-bottom: 0px;
     }
       
-    #left_block {
-        flex: 2.5;
-        padding-top: 10px;
-        padding-bottom: 30px;
-        margin-right: 0px;
-        max-width: 990px;
-    }
-    #left_block h2{
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
 
     .in_town {
         display: block;
@@ -762,11 +735,6 @@
         margin-bottom: 15px;
         margin-left: 15px;
         margin-right: 15px;
-    }
-
-    #right_block {
-        flex: 1;
-        padding-top: 10px;
     }
 
     #right_block h2{
