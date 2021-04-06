@@ -30,10 +30,14 @@
   /* Les couleurs de la charte sont le bleu #0065FC,
   et sa version plus claire #DEEBFF
   ainsi que le gris pour le fond #F2F2F2. */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
   
   body {
     font-family: "Raleway-Regular";
-    margin-top: 0px;
   }
   
   #landing {
