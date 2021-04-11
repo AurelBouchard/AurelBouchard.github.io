@@ -45,7 +45,7 @@ body {
 }
 
 #landing {
-  max-width: 1340px;
+  max-width: 86.25rem;
   margin: auto;
 }
 
@@ -54,10 +54,10 @@ h1, h1 i {
   font-size: 22px;
 }
 
-p {
+/* p {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
 a {
   color: black;
@@ -81,7 +81,7 @@ flex-direction: row;
 text-align: center;
 }
 .logo{
-margin-top: 43px;
+margin-top: 2.75rem;
 text-align: start;
 justify-self: flex-start;
 flex: 1;
@@ -89,26 +89,35 @@ flex: 1;
 .ancre_block{
 display: flex;
 flex-direction: row;
-width: 290px;
-margin-top: -22px;
+align-content: flex-start;
 }
 .ancre{
 flex: 1;
-padding-top: 50px;
+padding-top: 3rem;
+padding-left: 2rem;
+padding-right: 2rem;
+padding-bottom: 1rem;
 align-self:center;
+border-top: 0.1875rem solid white;
 }
-
-.links {
-padding-top: 50px;
-height: 20px;
-width: 145px;
+.ancre:hover {
+border-top: 0.1875rem solid #0065fc;
 }
 
 .signin {
+  margin-top: 2.1875rem;
+padding-top: 1rem;
+padding-left: 2rem;
+padding-right: 2rem;
+padding-bottom: 1rem;
 color: #0065fc;
 font-family: "Raleway-Bold";
+border-radius: 0.5rem;
 }
-
+.signin:hover {
+  color: white;
+  background-color:  #0065fc;
+}
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   PARTIE HAUTE : DIV SEARCH SECTION   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -273,7 +282,7 @@ padding-top: 1.25rem;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-max-width: 50rem;
+max-width: 52.375rem;
 justify-content: space-between;
 align-items: flex-start;
 }
@@ -305,12 +314,13 @@ object-fit:cover ;
 }
 
 .bottom_stripe {
-width: 14.75rem;
+align-self: flex-start;
+width: 13.75rem;
 height: 4.75rem;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-padding-left: 0.5rem;
+padding-left: 1rem;
 }
 
 .bottom_stripe > p:first-child {
@@ -434,7 +444,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
-max-width: 83.75rem;
+max-width: 86.25rem;
 /* margin-bottom: 20px; */
 }
 
@@ -447,38 +457,37 @@ min-width: 13rem;
 .activity {
 display: block;
 border-radius: 1.5rem;
-/* margin-bottom: 1.5rem; */
+margin-bottom: 2.625rem;
 }
 
 .activity img {
 display: block;
 width: 100%;
 object-fit: cover;
-border-radius: 1.5rem 1.5rem 0 0;
+border-radius: 1rem 1rem 0 0;
 }
 
 .full_height {
-height: 390px;
+height: 25.125rem;
 }
 .half_height {
-height: 153px;
+height: 9.5rem;
 }
-.prct70_height {
-height: 197px;
+.prct60_height {
+height: 12rem;
 }
-.prct30_height {
-height: 108px;
+.prct40_height {
+height: 7rem;
 }
 
 .activities_panel p {
 display: block;
 font-family: "Raleway-Bold";
 background-color: rgba(0, 0, 0, 0);
-height: 40px;
-border-radius: 0 0 20px 20px;
-margin-top: 0;
-padding-top: 20px;
-padding-left: 15px;
+height: 3.5rem;
+line-height: 3.5rem;
+border-radius: 0 0 1rem 1rem;
+padding-left: 1rem;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~   FOOTER   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -488,24 +497,24 @@ background-color: #f2f2f2;
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
-padding-left: 50px;
-padding-top: 30px;
-padding-bottom: 30px;
+padding-left: 3.5rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
 }
 footer div {
 margin-left: 4%;
 margin-right: 15%;
 }
-footer h2 {
+footer h1 {
 font-size: 18px;
+margin-bottom: 0.75rem;
 }
 footer ul {
 padding: 0;
 }
 footer li {
 font-size: 16px;
-margin-bottom: 11px;
-margin-left: 0;
+margin-bottom: 0.75rem;
 list-style: none;
 }
 
