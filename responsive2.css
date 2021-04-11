@@ -72,19 +72,17 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 }
+.logo{
+margin-top: 2.3125rem;
+text-align: start;
+flex: 1;
+}
 
 nav {
-width: 100%;
 font-size: 16px;
 display: flex;
 flex-direction: row;
-text-align: center;
-}
-.logo{
-margin-top: 2.75rem;
-text-align: start;
-justify-self: flex-start;
-flex: 1;
+align-self: flex-start;
 }
 .ancre_block{
 display: flex;
@@ -105,11 +103,12 @@ border-top: 0.1875rem solid #0065fc;
 }
 
 .signin {
-  margin-top: 2.1875rem;
+margin-top: 2.1875rem;
 padding-top: 1rem;
 padding-left: 2rem;
 padding-right: 2rem;
 padding-bottom: 1rem;
+/* background-color:  #deebff; */
 color: #0065fc;
 font-family: "Raleway-Bold";
 border-radius: 0.5rem;
